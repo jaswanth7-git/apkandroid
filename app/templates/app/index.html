@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+{% block body %}
+<div class="apps">
+{% for i in a %}
+<div class="border">
+    <img class="logo" src="{{ i.imgurl }}" alt="">
+    <p>{{ i.type }}</p>
+    <a class="name" href="{{ i.dlink }}"> {{i.name}} </a>
+</div>
+{% endfor %}
+{% endblock %}
+</div>
+
+

@@ -1,0 +1,89 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="">APK Android</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Feedback</a>
+      </li>
+
+     
+
+  <form method="get" action="/search" class="form-inline">
+    <input name="query" class="form-control mr-sm-2"  type="search" placeholder="Search Mod apk" aria-label="Search">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+  </form>
+    </ul>
+  </div>
+</nav>
+ <center><img class="onetap" src="{% static 'app/1.png' %}"><br></center>
+{% block body %}
+{% endblock %}
+<footer>
+  <div class="footercontent">
+      APK android
+  </div>
+     
+</footer>
+</body>
+</html>
+
+
+
+<style>
+  h3{
+    margin-left: 10%
+  }
+    .container{
+        margin-top:5%;
+        display: inline-flex;
+        justify-content: space-around;
+    }
+    .logo{
+        width: 150px;
+        height: 150px;
+        border-radius: 30px;
+        margin-left: 300px;
+        margin-top: 3%;
+    }
+    .head{
+      margin-top: 2%;
+      width: 75%;
+      height: 3cm;
+      margin-left: 3cm;
+    }
+    footer{
+      background-color: black;
+      color: aliceblue;
+      margin-top: 10%;
+    }
+    .onetap{
+      height: 200px;
+      width: 100%;
+      margin-bottom: 3%;
+    }
+    .name,p{
+      margin-left: 23%;
+    }
+   .border{
+     border: 1px solid black;
+   }
+
+</style>
